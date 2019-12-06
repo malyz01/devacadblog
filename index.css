@@ -1,6 +1,6 @@
 body {
-  background-image: url(BlogBG.jpg);
-  color: white;
+  background-image: url(website-design-background.png);
+  color: Black;
 }
 
 h1,
@@ -14,6 +14,14 @@ h6 {
 
 p {
   font-family: "Hind", sans-serif;
+}
+
+.ui.segment {
+  background-color: transparent;
+}
+
+.indexContainer {
+  padding: 2rem 0;
 }
 
 .header {

@@ -8,19 +8,18 @@
       href="https://fonts.googleapis.com/css?family=Hind|Martel+Sans|Noto+Sans:700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <link rel="stylesheet" href="index.css" />
-    <title>Blog</title>
-  </head>
-  <body>
-    <section>
-      <div onclick="myFunction('header')" class="header">
-        <h1>Matthew's Blog</h1>
-        <p>This is a test whether the paragraph font is nice looking</p>
-      </div>
-    </section>
-    <section onclick="second()">
-      another sections
-    </section>
     <script>
       function myFunction(param) {
         alert(param);
@@ -30,5 +29,22 @@
         alert("second");
       };
     </script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="ui container indexContainer">
+      <section>
+        <div onclick="myFunction('header')" class="header">
+          <h1>Test page</h1>
+          <div class="ui divider"></div>
+          <p>This is a test whether the paragraph font is nice looking</p>
+        </div>
+      </section>
+      <section>
+        <div class="ui segment">
+          <div class="ui primary button" onclick="second()">Button</div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
