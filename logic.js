@@ -34,6 +34,13 @@ function setValue(n) {
   initialize = true;
   input += n;
   display.innerText = input;
+
+  console.log("=====Set Value ====");
+  console.log("input: " + input);
+  console.log("total: " + total);
+  console.log("operator: " + operator);
+  console.log(h2);
+  console.log("=====Set Value ====");
 }
 
 function setOperator(o) {
@@ -51,13 +58,25 @@ function setOperator(o) {
   operator = o;
   showHistory.innerText = h2.join(" ");
   showOperator.innerText = " " + operator;
+
+  console.log("=====Set Operator ====");
+  console.log("input: " + input);
+  console.log("total: " + total);
+  console.log("operator: " + operator);
+  console.log(h2);
+  console.log("=====Set Operator ====");
 }
 
 function equal() {
+  if (operator !== "") {
+    calculate();
+  }
+  console.log("=====equal ====");
   console.log("input: " + input);
   console.log("total: " + total);
+  console.log("operator: " + operator);
   console.log(h2);
-  calculate();
+  console.log("=====equal ====");
 }
 
 function calculate() {
@@ -65,6 +84,13 @@ function calculate() {
   num2 = input === "" ? num1 : Number(input);
   total = math_it_up[operator](num1, num2);
   showTotal.innerText = total;
+
+  console.log("===== Calculate ====");
+  console.log("input: " + input);
+  console.log("total: " + total);
+  console.log("operator: " + operator);
+  console.log(h2);
+  console.log("===== Calculate ====");
 }
 
 // function operation() {
