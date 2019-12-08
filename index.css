@@ -21,12 +21,12 @@ p {
   font-size: 16px;
 }
 
-.ui.segment {
-  background-color: transparent;
-}
-
 .indexContainer {
   padding: 2rem 0;
+}
+
+.subContainer {
+  max-width: 700px;
 }
 
 .btnContainer {
