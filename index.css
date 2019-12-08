@@ -1,6 +1,6 @@
 body {
-  background-image: url(website-design-background.png);
-  color: Black;
+  /* background-image: url(website-design-background.png); */
+  color: black;
 }
 
 h1,
@@ -10,6 +10,10 @@ h4,
 h5,
 h6 {
   font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  padding: 1rem 0;
 }
 
 p {
@@ -24,8 +28,23 @@ p {
   padding: 2rem 0;
 }
 
+.btnContainer {
+  margin-top: 1rem;
+}
+
 .header {
   text-align: center;
+}
+
+.inputsContainer {
+  display: flex;
+}
+
+.inputs {
+  max-height: 30px;
+  max-width: 40px;
+  background-color: silver;
+  color: black;
 }
 
 /* 

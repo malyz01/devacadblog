@@ -13,22 +13,14 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
+    <link rel="stylesheet" href="index.css" />
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <link rel="stylesheet" href="index.css" />
-    <script>
-      function myFunction(param) {
-        alert(param);
-      }
 
-      const second = () => {
-        alert("second");
-      };
-    </script>
     <title>Blog</title>
   </head>
   <body>
@@ -36,15 +28,39 @@
       <section>
         <div onclick="myFunction('header')" class="header">
           <h1>Test page</h1>
-          <div class="ui divider"></div>
-          <p>This is a test whether the paragraph font is nice looking</p>
         </div>
       </section>
+
       <section>
-        <div class="ui segment">
-          <div class="ui primary button" onclick="second()">Button</div>
+        <span id="history"></span><span id="operator"></span>
+        <div id="display" class="ui segment">0</div>
+      </section>
+      <section>
+        <div class="inputsContainer">
+          <div onclick="setValue('1')" class="ui button">1</div>
+          <div onclick="setValue('2')" class="ui button">2</div>
+          <div onclick="setValue('3')" class="ui button">3</div>
+          <div onclick="setValue('4')" class="ui button">4</div>
+          <div onclick="setValue('5')" class="ui button">5</div>
+          <div onclick="setValue('6')" class="ui button">6</div>
+          <div onclick="setValue('7')" class="ui button">7</div>
+          <div onclick="setValue('8')" class="ui button">8</div>
+          <div onclick="setValue('9')" class="ui button">9</div>
+          <div onclick="setValue('0')" class="ui button">0</div>
+          <div onclick="setValue('.')" class="ui button">.</div>
+        </div>
+        <div class="btnContainer">
+          <div onclick="setOperator('+')" class="ui button">+</div>
+          <div onclick="setOperator('-')" class="ui button">-</div>
+          <div onclick="setOperator('*')" class="ui button">x</div>
+          <div onclick="setOperator('/')" class="ui button">/</div>
+          <div onclick="equal()" class="ui button">=</div>
+          <div onclick="ce()" class="ui button">CE</div>
+          <div onclick="c()" class="ui button">C</div>
         </div>
       </section>
     </div>
+
+    <script src="logic.js"></script>
   </body>
 </html>
