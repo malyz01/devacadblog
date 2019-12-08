@@ -2,14 +2,26 @@ var input = null;
 var operator = "";
 var num1 = "";
 var num2 = "";
-
 var total = 0;
 var initialize = false;
+var reset = false;
 var h = [];
-var h2 = [];
 var showTotal = document.getElementById("display");
 var showHistory = document.getElementById("history");
 var showOperator = document.getElementById("operator");
+var checkDigit = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
+var checkOperators = ["+", "-", "*", "/"];
+
+document.onkeydown = function(e) {
+  if (checkDigit.includes(e.key)) {
+    setValue(e.key);
+  }
+  if (checkOperators.includes(e.key)) {
+    setOperator(e.key);
+  }
+  if (e.key === "Backspace") c();
+  if (e.key === "NumpadEnter" || e.key === "Enter") equal();
+};
 
 var math_it_up = {
   "+": function(x, y) {
@@ -31,105 +43,66 @@ function setValue(n) {
     return (display.innerText = 0);
   }
   if (input === null) input = "";
+  if (input.includes(".") && n === ".") return;
+  if (reset) {
+    input = "";
+    reset = false;
+  }
   initialize = true;
   input += n;
   display.innerText = input;
-
-  console.log("=====Set Value ====");
-  console.log("input: " + input);
-  console.log("total: " + total);
-  console.log("operator: " + operator);
-  console.log(h2);
-  console.log("=====Set Value ====");
 }
 
 function setOperator(o) {
   if (input === null) return;
   if (initialize) {
     if (operator === "") {
-      h2.push(Number(input));
+      h.push(Number(input));
     } else {
-      h2.push(operator, Number(input));
       calculate();
+      h.push(operator, Number(input));
     }
     input = "";
     initialize = false;
   }
   operator = o;
-  showHistory.innerText = h2.join(" ");
+  showHistory.innerText = h.join(" ");
   showOperator.innerText = " " + operator;
-
-  console.log("=====Set Operator ====");
-  console.log("input: " + input);
-  console.log("total: " + total);
-  console.log("operator: " + operator);
-  console.log(h2);
-  console.log("=====Set Operator ====");
 }
 
 function equal() {
   if (operator !== "") {
     calculate();
+    h = [];
+    input = String(total);
+    reset = true;
+    initialize = true;
+    setInitial();
   }
-  console.log("=====equal ====");
-  console.log("input: " + input);
-  console.log("total: " + total);
-  console.log("operator: " + operator);
-  console.log(h2);
-  console.log("=====equal ====");
 }
 
 function calculate() {
-  num1 = h2[h2.length - 1];
+  num1 = total === 0 ? h[h.length - 1] : total;
   num2 = input === "" ? num1 : Number(input);
   total = math_it_up[operator](num1, num2);
   showTotal.innerText = total;
-
-  console.log("===== Calculate ====");
-  console.log("input: " + input);
-  console.log("total: " + total);
-  console.log("operator: " + operator);
-  console.log(h2);
-  console.log("===== Calculate ====");
 }
-
-// function operation() {
-//   if (initialize) {
-//     total = Number(input);
-//     input = "0";
-//     initialize = false;
-//   }
-//   h.push({ o: operator, n: total });
-
-//   var acc = h[0].n;
-//   var historyLog = h[0].n + " " + operator;
-//   for (var i = 1; i < h.length; i++) {
-//     total = math_it_up[h[i - 1].o](acc, h[i].n);
-//     var addHistory = "";
-//     addHistory = " " + h[i].n + " " + operator;
-//     acc = total;
-//     historyLog += addHistory;
-//   }
-
-//   showTotal.innerText = acc;
-
-//   h = [];
-//   showHistory.innerText = historyLog;
-//   input = "0";
-// }
 
 function ce() {
   h = [];
-  h2 = [];
   input = null;
-  operator = "";
-  total = 0;
-  showHistory.innerText = "";
-  showOperator.innerText = "";
   showTotal.innerText = "0";
+  setInitial();
 }
 
 function c() {
   input = "";
   showTotal.innerText = "0";
+}
+
+function setInitial() {
+  operator = "";
+  total = 0;
+  showHistory.innerText = "";
+  showOperator.innerText = "";
 }

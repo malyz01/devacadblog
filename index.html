@@ -21,44 +21,46 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
-    <title>Blog</title>
+    <title>Calculator</title>
   </head>
   <body>
     <div class="ui container indexContainer">
-      <section>
-        <div onclick="myFunction('header')" class="header">
-          <h1>Test page</h1>
-        </div>
-      </section>
-
-      <section>
-        <span id="history"></span><span id="operator"></span>
-        <div id="display" class="ui segment">0</div>
-      </section>
-      <section>
-        <div class="inputsContainer">
-          <div onclick="setValue('1')" class="ui button">1</div>
-          <div onclick="setValue('2')" class="ui button">2</div>
-          <div onclick="setValue('3')" class="ui button">3</div>
-          <div onclick="setValue('4')" class="ui button">4</div>
-          <div onclick="setValue('5')" class="ui button">5</div>
-          <div onclick="setValue('6')" class="ui button">6</div>
-          <div onclick="setValue('7')" class="ui button">7</div>
-          <div onclick="setValue('8')" class="ui button">8</div>
-          <div onclick="setValue('9')" class="ui button">9</div>
-          <div onclick="setValue('0')" class="ui button">0</div>
-          <div onclick="setValue('.')" class="ui button">.</div>
-        </div>
-        <div class="btnContainer">
-          <div onclick="setOperator('+')" class="ui button">+</div>
-          <div onclick="setOperator('-')" class="ui button">-</div>
-          <div onclick="setOperator('*')" class="ui button">x</div>
-          <div onclick="setOperator('/')" class="ui button">/</div>
-          <div onclick="equal()" class="ui button">=</div>
-          <div onclick="ce()" class="ui button">CE</div>
-          <div onclick="c()" class="ui button">C</div>
-        </div>
-      </section>
+      <div class="subContainer">
+        <section>
+          <div onclick="myFunction('header')" class="header">
+            <h1>Calculator</h1>
+            <p>an almost Windows calculator functionality clone</p>
+          </div>
+        </section>
+        <section>
+          <span id="history"></span><span id="operator"></span>
+          <div id="display" class="ui segment">0</div>
+        </section>
+        <section>
+          <div class="inputsContainer">
+            <div onclick="setValue('1')" class="ui button">1</div>
+            <div onclick="setValue('2')" class="ui button">2</div>
+            <div onclick="setValue('3')" class="ui button">3</div>
+            <div onclick="setValue('4')" class="ui button">4</div>
+            <div onclick="setValue('5')" class="ui button">5</div>
+            <div onclick="setValue('6')" class="ui button">6</div>
+            <div onclick="setValue('7')" class="ui button">7</div>
+            <div onclick="setValue('8')" class="ui button">8</div>
+            <div onclick="setValue('9')" class="ui button">9</div>
+            <div onclick="setValue('0')" class="ui button">0</div>
+            <div onclick="setValue('.')" class="ui button">.</div>
+          </div>
+          <div class="btnContainer">
+            <div onclick="setOperator('+')" class="ui button">+</div>
+            <div onclick="setOperator('-')" class="ui button">-</div>
+            <div onclick="setOperator('*')" class="ui button">x</div>
+            <div onclick="setOperator('/')" class="ui button">/</div>
+            <div onclick="equal()" class="ui button">=</div>
+            <div onclick="ce()" class="ui button">CE</div>
+            <div onclick="c()" class="ui button">C</div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script src="logic.js"></script>
