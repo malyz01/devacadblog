@@ -15,14 +15,18 @@ function setValue(n) {
   }
   if (input === null) input = "";
   if (input.includes(".") && n === ".") return;
-  if (n === ".") input = "0";
+  if (n === "." && input === "") input = "0";
   if (reset) {
     input = "";
     reset = false;
   }
   initialize = true;
-  input += n;
-  display.innerText = input;
+  if (input.includes(".")) {
+    if (input.length < 17) input += n;
+  } else {
+    if (input.length < 16) input += n;
+  }
+  showTotal.innerText = d(input);
 }
 
 function setOperator(o) {
@@ -45,7 +49,7 @@ function setOperator(o) {
 function opposite() {
   if (input === null) return;
   input = String(Number(input) * -1);
-  showTotal.innerText = input;
+  showTotal.innerText = d(input);
 }
 
 function equal() {
@@ -63,7 +67,7 @@ function calculate() {
   num1 = total === 0 ? h[h.length - 1] : total;
   num2 = input === "" ? num1 : Number(input);
   total = math_it_up[operator](num1, num2);
-  showTotal.innerText = total;
+  showTotal.innerText = d(total);
 }
 
 function ce() {
@@ -83,4 +87,9 @@ function setInitial() {
   total = 0;
   showHistory.innerText = "";
   showOperator.innerText = "";
+}
+
+function d(x) {
+  if (Number(x) === 0) return x;
+  return Number(x).toLocaleString("en", { maximumFractionDigits: 16 });
 }
