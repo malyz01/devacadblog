@@ -78,7 +78,7 @@ function ce() {
 }
 
 function c() {
-  input = "";
+  input = "0";
   showTotal.innerText = "0";
 }
 
