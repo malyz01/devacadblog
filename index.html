@@ -24,54 +24,58 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div class="ui container indexContainer">
-      <div class="subContainer">
-        <section>
-          <div onclick="myFunction('header')" class="header">
-            <h1>Calculator</h1>
-            <p>an almost Windows calculator functionality clone</p>
+    <div class="ui container main">
+      <div class="ui raised segment placeholder mainContainer">
+        <div class="ui segment">
+          <div class="history">
+            <span id="history"></span><span id="operator"></span>
           </div>
-        </section>
-        <section>
-          <div class="ui raised segments ">
-            <div class="calcContainer">
-              <div class="display">
-                <span id="history"></span><span id="operator"></span>
-                <div id="display" class="ui segment">0</div>
-              </div>
 
-              <div class="four ui buttons">
-                <div onclick="opposite('+/-')" class="ui button">+/-</div>
-                <div onclick="ce()" class="ui button">CE</div>
-                <div onclick="c()" class="ui button">C</div>
-              </div>
-              <div>
-                <div onclick="setValue('7')" class="ui button">7</div>
-                <div onclick="setValue('8')" class="ui button">8</div>
-                <div onclick="setValue('9')" class="ui button">9</div>
-                <div onclick="setOperator('/')" class="ui button">/</div>
-              </div>
-              <div>
-                <div onclick="setValue('4')" class="ui button">4</div>
-                <div onclick="setValue('5')" class="ui button">5</div>
-                <div onclick="setValue('6')" class="ui button">6</div>
-                <div onclick="setOperator('*')" class="ui button">x</div>
-              </div>
-              <div>
-                <div onclick="setValue('1')" class="ui button">1</div>
-                <div onclick="setValue('2')" class="ui button">2</div>
-                <div onclick="setValue('3')" class="ui button">3</div>
-                <div onclick="setOperator('-')" class="ui button">-</div>
-              </div>
-              <div>
-                <div onclick="setValue('.')" class="ui button">.</div>
-                <div onclick="setValue('0')" class="ui button">0</div>
-                <div onclick="equal()" class="ui button">=</div>
-                <div onclick="setOperator('+')" class="ui button">+</div>
-              </div>
+          <div id="display" class="display">0</div>
+        </div>
+        <div class="ui grid btnContainer">
+          <div class="row">
+            <div onclick="opposite('+/-')" class="ui huge grey button">
+              +/-
+            </div>
+            <div onclick="c()" class="ui huge grey button">C</div>
+            <div onclick="ce()" class="ui huge grey button">CE</div>
+            <div onclick="setOperator('/')" class="ui huge grey button">
+              /
             </div>
           </div>
-        </section>
+          <div class="row">
+            <div onclick="setValue('7')" class="ui huge button">7</div>
+            <div onclick="setValue('8')" class="ui huge button">8</div>
+            <div onclick="setValue('9')" class="ui huge button">9</div>
+            <div onclick="setOperator('*')" class="ui huge grey button">
+              x
+            </div>
+          </div>
+          <div class="row">
+            <div onclick="setValue('4')" class="ui huge button">4</div>
+            <div onclick="setValue('5')" class="ui huge button">5</div>
+            <div onclick="setValue('6')" class="ui huge button">6</div>
+            <div onclick="setOperator('-')" class="ui huge grey button">
+              -
+            </div>
+          </div>
+          <div class="row">
+            <div onclick="setValue('1')" class="ui huge button">1</div>
+            <div onclick="setValue('2')" class="ui huge button">2</div>
+            <div onclick="setValue('3')" class="ui huge button">3</div>
+            <div onclick="setOperator('+')" class="ui huge grey button">
+              +
+            </div>
+          </div>
+          <div class="row">
+            <div onclick="setValue('.')" class="ui huge button">.</div>
+            <div onclick="setValue('0')" class="ui huge button btnE">0</div>
+            <div onclick="equal()" class="ui huge blue button">
+              =
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

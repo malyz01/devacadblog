@@ -12,45 +12,47 @@ h6 {
   font-family: "Noto Sans", sans-serif;
 }
 
-section {
-  padding: 1rem 0;
-}
-
 p {
   font-family: "Hind", sans-serif;
   font-size: 16px;
 }
 
-.indexContainer {
-  padding: 2rem 0;
+.ui.button {
+  min-width: 100.01px;
 }
 
-.subContainer {
-  max-width: 500px;
+.main {
+  padding-top: 350px;
 }
 
-.btnContainer {
-  margin-top: 1rem;
+.mainContainer {
+  min-width: 350px !important;
+  max-width: 450px !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 1rem 1rem !important;
 }
 
-.header {
-  text-align: center;
+.displayContainer {
+  padding: 0 !important;
+}
+
+.history {
+  font-family: "Martel Sans", sans-serif;
+  min-height: 1.4rem;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-bottom: 4px;
 }
 
 .display {
   text-align: right;
+  font-size: 2rem;
 }
 
-.calcContainer {
-  padding: 1rem;
+.btnContainer {
+  margin: 0 auto !important;
 }
 
-.ui.button {
-  min-width: 70px;
+.btnE {
+  width: 204px !important;
 }
-
-/* 
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Martel Sans', sans-serif;
-font-family: 'Hind', sans-serif;
-*/
