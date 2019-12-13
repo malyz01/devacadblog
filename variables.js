@@ -21,7 +21,7 @@ var math_it_up = {
   "*": function(x, y) {
     return x * y;
   },
-  "/": function(x, y) {
+  "÷": function(x, y) {
     return x / y;
   }
 };

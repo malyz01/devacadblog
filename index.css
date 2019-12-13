@@ -1,5 +1,6 @@
 body {
   background-image: url(Calc.jpg);
+  background-size: auto;
   color: black;
 }
 
@@ -22,7 +23,7 @@ p {
 }
 
 .main {
-  padding-top: 350px;
+  padding-top: 220px;
 }
 
 .mainContainer {
