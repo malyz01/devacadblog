@@ -1,6 +1,3 @@
-ul {
-}
-
 li {
   list-style-type: none;
   display: inline;
@@ -8,4 +5,32 @@ li {
 
 nav {
   display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+}
+
+section {
+  margin: 1rem 0 0;
+}
+
+hr {
+  opacity: 0.4;
+}
+
+.ui.container {
+  padding-top: 2rem;
+}
+
+.navLogo {
+  align-self: center;
+}
+
+.navLinks {
+  justify-self: flex-start;
+  text-align: left;
 }
