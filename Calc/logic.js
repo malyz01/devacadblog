@@ -3,7 +3,9 @@ document.onkeydown = function(e) {
     setValue(e.key);
   }
   if (checkOperators.includes(e.key)) {
-    setOperator(e.key);
+    var o = e.key;
+    if ((e.key = "/")) o = "÷";
+    setOperator(o);
   }
   if (e.key === "Backspace") c();
   if (e.key === "NumpadEnter" || e.key === "Enter") equal();

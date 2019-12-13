@@ -5,81 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Hind|Martel+Sans|Noto+Sans:700&display=swap"
       rel="stylesheet"
-    />
-    <link
+      href="themes/semantic.min.css"
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-
-    <title>Calculator</title>
+    <link href="themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="themes/prism.js"></script>
+    <title>Matthew's Blog</title>
   </head>
   <body>
-    <div class="ui container main">
-      <div class="ui raised segment placeholder mainContainer">
-        <div class="ui segment">
-          <div class="history">
-            <span id="history"></span><span id="operator"></span>
-          </div>
-
-          <div id="display" class="display">0</div>
-        </div>
-        <div class="ui grid btnContainer">
-          <div class="row">
-            <div onclick="opposite('+/-')" class="ui huge grey button">
-              +/-
-            </div>
-            <div onclick="c()" class="ui huge grey button">C</div>
-            <div onclick="ce()" class="ui huge grey button">CE</div>
-            <div onclick="setOperator('÷')" class="ui huge grey button">
-              ÷
-            </div>
-          </div>
-          <div class="row">
-            <div onclick="setValue('7')" class="ui huge button">7</div>
-            <div onclick="setValue('8')" class="ui huge button">8</div>
-            <div onclick="setValue('9')" class="ui huge button">9</div>
-            <div onclick="setOperator('*')" class="ui huge grey button">
-              x
-            </div>
-          </div>
-          <div class="row">
-            <div onclick="setValue('4')" class="ui huge button">4</div>
-            <div onclick="setValue('5')" class="ui huge button">5</div>
-            <div onclick="setValue('6')" class="ui huge button">6</div>
-            <div onclick="setOperator('-')" class="ui huge grey button">
-              -
-            </div>
-          </div>
-          <div class="row">
-            <div onclick="setValue('1')" class="ui huge button">1</div>
-            <div onclick="setValue('2')" class="ui huge button">2</div>
-            <div onclick="setValue('3')" class="ui huge button">3</div>
-            <div onclick="setOperator('+')" class="ui huge grey button">
-              +
-            </div>
-          </div>
-          <div class="row">
-            <div onclick="setValue('.')" class="ui huge button">.</div>
-            <div onclick="setValue('0')" class="ui huge button btnE">0</div>
-            <div onclick="equal()" class="ui huge blue button">
-              =
-            </div>
-          </div>
-        </div>
+    <div class="ui container">
+      <nav>
+        <ul>
+          <li><a href="Calc/calc.html">Home</a></li>
+          <li>Articles</li>
+          <li>Projects</li>
+        </ul>
+      </nav>
+      <div>
+        <pre>
+            <code class="language-javascript">for(var i = 0; i < 10; i++){
+                if(i === 8) {
+                    console.log(i) 
+                }
+            }</code></pre>
       </div>
     </div>
-
-    <script src="variables.js"></script>
-    <script src="logic.js"></script>
   </body>
 </html>
