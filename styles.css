@@ -10,25 +10,35 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+li {
   font-family: "Fira Sans", sans-serif;
 }
 
 h4,
 h5,
-h6,
-li {
+h6 {
   font-family: "Work Sans", sans-serif;
+}
+
+ul {
+  margin: 1rem 0;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
   display: inline;
+  padding: 0 1rem;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
 }
 
 nav {
@@ -56,9 +66,15 @@ hr {
 
 .navLogo {
   align-self: center;
+  font-size: 2rem;
+  color: #b4b7ba;
+}
+
+.navLogoSpan {
+  font-weight: bold;
+  color: black;
 }
 
 .navLinks {
-  justify-self: flex-start;
-  text-align: left;
+  font-size: 1.3rem;
 }
