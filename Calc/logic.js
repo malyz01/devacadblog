@@ -4,7 +4,7 @@ document.onkeydown = function(e) {
   }
   if (checkOperators.includes(e.key)) {
     var o = e.key;
-    if ((e.key = "/")) o = "÷";
+    if (e.key === "/") o = "÷";
     setOperator(o);
   }
   if (e.key === "Backspace") c();

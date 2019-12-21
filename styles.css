@@ -4,21 +4,27 @@ font-family: 'Work Sans', sans-serif;
 font-family: 'Shanti', sans-serif;
 */
 
-body {
-  font-family: "Shanti", sans-serif;
-}
-
 h1,
 h2,
 h3,
+h4,
+h5,
+h6 {
+  font-family: "Shanti", sans-serif;
+}
+
+header {
+  text-align: center;
+  opacity: 0.9;
+}
+
 li {
   font-family: "Fira Sans", sans-serif;
 }
 
-h4,
-h5,
-h6 {
+body {
   font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -53,7 +59,7 @@ footer {
 }
 
 section {
-  margin: 1rem 0 0;
+  margin: 4rem 0;
 }
 
 hr {
@@ -66,15 +72,27 @@ hr {
 
 .navLogo {
   align-self: center;
-  font-size: 2rem;
-  color: #b4b7ba;
+  font-size: 1.7rem;
+  font-family: "Shanti", sans-serif;
 }
 
 .navLogoSpan {
   font-weight: bold;
-  color: black;
+  color: #27ddce;
 }
 
 .navLinks {
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navLogo {
+    align-self: center;
+    font-size: 1.4rem;
+    font-family: "Shanti", sans-serif;
+  }
+
+  .navLinks {
+    font-size: 1rem;
+  }
 }
