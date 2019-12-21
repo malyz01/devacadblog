@@ -13,8 +13,6 @@
 .linkContainer {
   height: 200px;
   min-width: 400px;
-  max-width: 800px;
-  margin: auto;
   display: flex;
   color: white;
   justify-content: center;
@@ -22,6 +20,11 @@
   font-family: "Shanti", sans-serif;
   font-size: 4rem;
   border-radius: 10px;
+}
+
+.linkDetail {
+  text-align: justify;
+  padding: 1rem 0;
 }
 
 .linkContent {
