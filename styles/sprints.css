@@ -17,7 +17,9 @@ article {
 .linkTechnical {
   height: 150px;
   min-width: 400px;
-  display: flex;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .linkCultural {
@@ -33,8 +35,7 @@ article {
 }
 
 .linkContent {
-  margin: auto;
-  align-self: center;
+  line-height: 150px;
   font-size: 1.5rem;
   font-family: "Shanti", sans-serif;
   transition: 0.3s ease-in-out;
@@ -58,10 +59,16 @@ article {
 
   .linkCultural,
   .linkTechnical {
+    margin: auto;
     height: 100px;
     min-width: 370px;
     max-width: 500px;
-    display: flex;
-    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .linkContent {
+    line-height: 100px;
   }
 }

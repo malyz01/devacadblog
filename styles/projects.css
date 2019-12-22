@@ -1,0 +1,10 @@
+.mainContainer {
+  min-height: 616px;
+}
+
+.projectContainer {
+  min-width: 300px;
+  max-width: 600px;
+  margin: auto;
+  text-align: justify;
+}
