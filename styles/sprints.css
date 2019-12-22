@@ -1,0 +1,57 @@
+.sprintContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkCultural,
+.linkTechnical {
+  height: 200px;
+  min-width: 370px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.linkCultural {
+  border: 0.5px solid #37c6b8;
+  color: #37c6b8;
+}
+
+.linkTechnical {
+  background-image: linear-gradient(to right, #16afa0, #37c6b8);
+  color: white;
+}
+
+.linkContent {
+  margin: auto;
+  align-self: center;
+  font-size: 2.5rem;
+  font-family: "Shanti", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.linkContent:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .sprintContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .linkCultural,
+  .linkTechnical {
+    height: 150px;
+    min-width: 370px;
+    max-width: 500px;
+    display: flex;
+    border-radius: 0;
+    margin: auto;
+  }
+}

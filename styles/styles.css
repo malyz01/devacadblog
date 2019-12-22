@@ -52,14 +52,8 @@ nav {
   justify-content: space-between;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 35%;
-}
-
 section {
-  margin: 4rem auto;
+  margin: 2rem auto;
   max-width: 800px;
 }
 
@@ -84,6 +78,26 @@ hr {
 
 .navLinks {
   font-size: 1.3rem;
+}
+
+.footerContainer {
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  background-image: linear-gradient(to right, #16afa0, #37c6b8) !important;
+}
+
+.footerContent {
+  align-self: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin: auto;
+  color: white;
+  min-width: 300px;
+}
+
+.footerContent > h3 {
+  text-shadow: 1px 1px #111111;
 }
 
 @media screen and (max-width: 600px) {

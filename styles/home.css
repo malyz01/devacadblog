@@ -16,7 +16,7 @@
   display: flex;
   color: white;
   justify-content: center;
-  background-image: linear-gradient(to right, #01c4b4, #2af7e6);
+  background-image: linear-gradient(to right, #16afa0, #37c6b8);
   font-family: "Shanti", sans-serif;
   font-size: 4rem;
   border-radius: 10px;
@@ -29,5 +29,4 @@
 
 .linkContent {
   align-self: center;
-  text-shadow: 2px 2px #636363;
 }
