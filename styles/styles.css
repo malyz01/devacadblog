@@ -66,10 +66,16 @@ hr {
   padding-top: 2rem;
 }
 
+.navLinks,
+.navItem {
+  transition: 0.3s ease-in-out;
+}
+
 .navLogo {
   align-self: center;
   font-size: 1.7rem;
   font-family: "Shanti", sans-serif;
+  transition: 0.5s ease-in-out;
 }
 
 .navLogoSpan {
@@ -84,7 +90,6 @@ hr {
 
 .navItem {
   margin: 0 1.5rem;
-  transition: 0.3s ease-in-out;
 }
 
 .navItem:hover {
