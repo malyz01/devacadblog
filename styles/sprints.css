@@ -1,57 +1,67 @@
+h3 {
+  text-align: center;
+}
+
+article {
+  margin: 4rem 0;
+}
+
 .sprintContainer {
   display: flex;
   justify-content: space-between;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
 }
 
 .linkCultural,
 .linkTechnical {
-  height: 200px;
-  min-width: 370px;
+  height: 150px;
+  min-width: 400px;
   display: flex;
-  border-radius: 10px;
 }
 
 .linkCultural {
-  border: 0.5px solid #37c6b8;
-  color: #37c6b8;
+  background-color: white;
+  border: 1px solid #16afa0;
+  color: #16afa0;
 }
 
 .linkTechnical {
-  background-image: linear-gradient(to right, #16afa0, #37c6b8);
+  background-color: #16afa0;
   color: white;
+  text-shadow: 2px 2px #28b7a6;
 }
 
 .linkContent {
   margin: auto;
   align-self: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "Shanti", sans-serif;
   transition: 0.3s ease-in-out;
 }
 
 .linkContent:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 @media screen and (max-width: 850px) {
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
+  h3 {
+    font-size: 1.2rem;
+    margin: 0;
   }
 
   .sprintContainer {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   .linkCultural,
   .linkTechnical {
-    height: 150px;
+    height: 100px;
     min-width: 370px;
     max-width: 500px;
     display: flex;
-    border-radius: 0;
     margin: auto;
   }
 }
