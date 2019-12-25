@@ -58,12 +58,18 @@ section {
   max-width: 800px;
 }
 
-hr {
-  opacity: 0.4;
+pre {
+  padding: 0.5rem 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .ui.container {
   padding-top: 2rem;
+}
+
+.mainContainer {
+  min-height: 616px;
+  padding: 0 1rem;
 }
 
 .navLinks,
@@ -106,8 +112,6 @@ hr {
 
 .footerContent {
   align-self: center;
-  /* display: flex; */
-  /* justify-content: space-between; */
   margin: auto;
   color: white;
   min-width: 300px;

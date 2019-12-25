@@ -1,0 +1,28 @@
+.sContainer {
+  min-width: 300px;
+  max-width: 600px;
+  margin: auto;
+  text-align: justify;
+}
+
+.sHeader {
+  font-family: "Shanti", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sTitle,
+.sBody {
+  margin-bottom: 1.5rem;
+}
+
+.sTitle {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.sBody {
+  font-family: "Work Sans", sans-serif;
+  text-align: justify;
+}
