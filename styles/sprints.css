@@ -2,10 +2,6 @@ h3 {
   text-align: center;
 }
 
-article {
-  margin: 4rem 0;
-}
-
 .sprintContainer {
   display: flex;
   justify-content: space-between;
