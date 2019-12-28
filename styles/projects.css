@@ -14,6 +14,29 @@
 .projectLink {
   margin: 1rem auto;
   padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.projectLink:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+.projectLink::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -0.5%;
+  opacity: 0;
+  background: black;
+  transition: all 0.6s ease;
+}
+
+.projectLink:hover::before {
+  opacity: 1;
 }
 
 .projectBody {

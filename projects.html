@@ -14,12 +14,14 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="styles/themes/fontawesome.min.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/projects.css" />
-    <link href="styles/themes/prism.css" rel="stylesheet" />
-    <script src="js/prism.js"></script>
-    <script defer src="js/fontawesome.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/3278f04ffd.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Projects</title>
   </head>
   <body>
@@ -39,7 +41,7 @@
         </nav>
       </div>
     </div>
-    <!-- TODO add animation to hover  -->
+
     <div class="mainContainer">
       <article>
         <section>
@@ -47,27 +49,37 @@
             <div class="projectHeader">
               Calculator
             </div>
-            <div class="projectLink">
-              <a href="Calc/calc.html">
-                <img
-                  class="ui centered image"
-                  src="images/CalcLogo.png"
-                  alt="calcLogo"
-                />
-              </a>
+            <div onclick="location.href='Calc/calc.html'" class="projectLink">
+              <img
+                class="ui centered image"
+                src="images/CalcLogo.png"
+                alt="calcLogo"
+              />
             </div>
             <div class="projectBody">
               My almost windows functionality clone calculator. You can use your
-              keyboard to type in the numbers and operators you need to
-              calculate.
+              keyboard to type in the numbers and operators to calculate.
             </div>
           </div>
+        </section>
+
+        <section>
+          <!-- add another project -->
         </section>
       </article>
     </div>
 
     <div class="ui raised segment footerContainer">
       <div class="footerContent">
+        <a href="mailto:mattuy001@gmail.com">
+          <i class="far fa-envelope fa-lg"></i>
+        </a>
+        <a href="https://github.com/malyz01">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/matthew-philip-uy-7b305815a/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
         <h3>&copy Copyright Matt Uy</h3>
       </div>
     </div>

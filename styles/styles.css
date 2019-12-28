@@ -13,6 +13,10 @@ h6 {
   font-family: "Shanti", sans-serif;
 }
 
+h3 {
+  margin-top: 0.5rem;
+}
+
 header {
   text-align: center;
   opacity: 0.9;
@@ -140,6 +144,10 @@ pre {
 
 .footerContent > h3 {
   text-shadow: 1px 1px #111111;
+}
+
+.footerLink {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
