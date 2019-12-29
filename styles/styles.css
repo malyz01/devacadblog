@@ -164,4 +164,13 @@ pre {
   .navItem {
     margin: 0 0.5rem;
   }
+
+  .ui.segment {
+    padding: 1em 0.5em;
+  }
+
+  .ui.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
