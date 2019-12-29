@@ -150,7 +150,7 @@ pre {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .navLogo {
     align-self: center;
     font-size: 1.4rem;
@@ -162,6 +162,6 @@ pre {
   }
 
   .navItem {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
   }
 }
