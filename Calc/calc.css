@@ -41,9 +41,11 @@ a:hover {
   max-width: 500px !important;
   margin: 0 auto !important;
   padding: 2rem 2rem 1.5rem !important;
-  background: #e7e7e6 !important;
+  background-image: linear-gradient(to bottom, #f3f2f1, #e7e7e6) !important;
   border-radius: 20px !important;
-  border: 2px solid #dad8d8 !important;
+  -webkit-box-shadow: 6px 10px 16px 0px rgba(138, 138, 138, 1);
+  -moz-box-shadow: 6px 10px 16px 0px rgba(138, 138, 138, 1);
+  box-shadow: 6px 7px 5px 0px rgba(153, 152, 151, 0.75) !important;
 }
 
 .title {
@@ -83,7 +85,7 @@ a:hover {
 .num {
   background: linear-gradient(#fbf9f7, #efedea) !important;
   position: relative;
-  box-shadow: 2px 2.5px #b0afae !important;
+  box-shadow: 2px 2.5px 5px #b0afae !important;
 }
 
 .num:active {
@@ -95,7 +97,7 @@ a:hover {
   background: linear-gradient(#8e8e8e, #616161) !important;
   color: white !important;
   position: relative;
-  box-shadow: 2px 2.5px #b0afae !important;
+  box-shadow: 2px 2.5px 5px #b0afae !important;
 }
 
 .misc:active {
@@ -107,7 +109,7 @@ a:hover {
   background: linear-gradient(#fe8b69, #d15d34) !important;
   color: white !important;
   position: relative;
-  box-shadow: 2px 2.5px #b0afae !important;
+  box-shadow: 2px 2.5px 5px #b0afae !important;
 }
 
 .eqOff:active {
