@@ -38,13 +38,25 @@ a:hover {
 
 .mainContainer {
   min-width: 350px !important;
-  max-width: 450px !important;
+  max-width: 500px !important;
   margin: 0 auto !important;
-  padding: 2.5rem 1rem 1rem !important;
+  padding: 2rem 2rem 1.5rem !important;
+  background: #e7e7e6 !important;
+  border-radius: 20px !important;
+  border: 2px solid #dad8d8 !important;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2rem;
+  opacity: 0.15;
 }
 
 .displayContainer {
-  padding: 0 !important;
+  border-radius: 12px !important;
+  border: 2px solid #cecece !important;
 }
 
 .history {
@@ -66,6 +78,42 @@ a:hover {
 
 .btnE {
   width: 204px !important;
+}
+
+.num {
+  background: linear-gradient(#fbf9f7, #efedea) !important;
+  position: relative;
+  box-shadow: 2px 2.5px #b0afae !important;
+}
+
+.num:active {
+  box-shadow: none !important;
+  background: linear-gradient(#efedea, #fbf9f7) !important;
+}
+
+.misc {
+  background: linear-gradient(#8e8e8e, #616161) !important;
+  color: white !important;
+  position: relative;
+  box-shadow: 2px 2.5px #b0afae !important;
+}
+
+.misc:active {
+  box-shadow: none !important;
+  background: linear-gradient(#616161, #8e8e8e) !important;
+}
+
+.eqOff {
+  background: linear-gradient(#fe8b69, #d15d34) !important;
+  color: white !important;
+  position: relative;
+  box-shadow: 2px 2.5px #b0afae !important;
+}
+
+.eqOff:active {
+  box-shadow: none !important;
+  background: #d15d34 !important;
+  background: linear-gradient(#d15d34, #fe8b69) !important;
 }
 
 @media only screen and (max-width: 600px) {
