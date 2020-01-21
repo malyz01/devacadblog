@@ -120,7 +120,7 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
   .main {
-    padding-top: 70px;
+    padding-top: 30px;
   }
 
   .ui.button {
