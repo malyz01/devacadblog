@@ -12,7 +12,7 @@ h3 {
   font-weight: 700;
 }
 
-.linkCultural,
+.linkCore,
 .linkTechnical {
   height: 150px;
   min-width: 400px;
@@ -21,7 +21,7 @@ h3 {
   vertical-align: middle;
 }
 
-.linkCultural {
+.linkCore {
   background-color: white;
   border: 1px solid #16afa0;
   color: #16afa0;
@@ -56,7 +56,7 @@ h3 {
     padding: 0 1rem;
   }
 
-  .linkCultural,
+  .linkCore,
   .linkTechnical {
     margin: auto;
     height: 100px;
