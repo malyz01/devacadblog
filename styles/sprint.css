@@ -1,3 +1,8 @@
+hr {
+  margin: 2rem 0;
+  opacity: 0.2;
+}
+
 .sContainer {
   min-width: 300px;
   max-width: 600px;
@@ -10,6 +15,14 @@
   font-size: 2rem;
   text-align: center;
   margin: 2rem 0 4rem;
+  color: #16afa0;
+}
+
+.sTopic {
+  font-family: "Shanti", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.6;
 }
 
 .sTitle,
@@ -20,9 +33,12 @@
 .sTitle {
   font-family: "Fira Sans", sans-serif;
   font-size: 1.5rem;
+  opacity: 0.8;
+  color: #16afa0;
 }
 
 .sBody {
   font-family: "Work Sans", sans-serif;
   text-align: justify;
+  color: black;
 }
